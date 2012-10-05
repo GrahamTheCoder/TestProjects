@@ -1,0 +1,13 @@
+﻿<Window x:Class="WpfApplication1.VsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:t="clr-namespace:WpfApplication1"
+        Title="VsWindow" Height="300" Width="300"
+        >
+    <Grid x:Name="theGrid">
+        <t:Beaky x:Name="m_Beaky" IsOpen="True" Placement="Relative"
+            HorizontalOffset="{Binding ElementName=theGrid, Path=Left, Mode=OneWay}"
+            VerticalOffset="{Binding ElementName=theGrid, Path=Top, Mode=OneWay}"
+         />
+    </Grid>
+</Window>
