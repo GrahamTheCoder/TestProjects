@@ -5,7 +5,7 @@
         Title="VsWindow" Height="300" Width="300"
         >
     <Grid x:Name="theGrid">
-        <t:Beaky x:Name="m_Beaky" IsOpen="True" Placement="Relative"
+        <t:Beaky x:Name="m_Beaky" IsOpen="True" Placement="Bottom" PlacementTarget="{Binding theGrid}"
             HorizontalOffset="{Binding ElementName=theGrid, Path=Left, Mode=OneWay}"
             VerticalOffset="{Binding ElementName=theGrid, Path=Top, Mode=OneWay}"
          />
